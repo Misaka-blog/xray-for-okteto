@@ -112,26 +112,17 @@
 			{
 				"type": "field",
 				"domain": [
-					"domain:openai.com",
-					"domain:ai.com"
+					"geosite:openai",
+					"domain:sentry.io"
 				],
 				"outboundTag": "WARP"
 			},
 			{
+				"type": "field",
 				"domain": [
-					"fast.com",
-					"speedtest.net",
-					"speedtest.com",
-					"speedtest.cn",
-					"test.ustc.edu.cn",
-					"10000.gd.cn",
-					"db.laomoe.com",
-					"jiyou.cloud",
-					"ovo.speedtestcustom.com",
-					"speed.cloudflare.com"
+					"geosite:speedtest"
 				],
-				"outboundTag": "blocked",
-				"type": "field"
+				"outboundTag": "blocked"
 			}
 		]
 	},
